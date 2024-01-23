@@ -1,6 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
+// pre-processor directives
+
+//include needed C and header files
+#include "BasicIo.c"
 
 int main(void){
-    puts("Hello World!");
+    /* BasicIo */
+    // output();
+    input();
 }
