@@ -13,9 +13,9 @@
 #include <stdio.h>
 
 // function declarations
-void loop1(void);
-void loop2(void);
-void loop3(void);
-void loop4(void);
-void loop5(void);
-void recursion(void);
+void loops1(void);
+void loops2(void);
+void loops3(void);
+void loops4(void);
+void loops5(void);
+void recursion(int);
