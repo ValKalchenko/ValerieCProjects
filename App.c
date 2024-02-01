@@ -5,6 +5,7 @@
 #include "Decisions.c"
 #include "Loops.c"
 #include "Functions.c"
+#include "Pointers.c"
 
 int main(void){
     /* BasicIo */
@@ -29,12 +30,23 @@ int main(void){
 
     /* Functions */
     // declare 3 character arrays
-    char student[] = "Valerie Kalchenko";
-    char language[] = "C";
-    char programmer[] = "Dennis Ritchie";
-    congradulate1(student, language, programmer);
-    congradulate2(student, language, programmer);
+    // char student[] = "Valerie Kalchenko";
+    // char language[] = "C";
+    // char programmer[] = "Dennis Ritchie";
+    // congradulate1(student, language, programmer);
+    // congradulate2(student, language, programmer);
 
-    printf("%.1f degrees celsius = %.1f degrees fahrenheit.\n", 0.0, fahrenheitFromCelcius(0.0));
-    printf("%.1f degrees celsius = %.1f degrees fahrenheit.\n", 100.0, fahrenheitFromCelcius(100.0));
+    // printf("%.1f degrees celsius = %.1f degrees fahrenheit.\n", 0.0, fahrenheitFromCelcius(0.0));
+    // printf("%.1f degrees celsius = %.1f degrees fahrenheit.\n", 100.0, fahrenheitFromCelcius(100.0));
+
+    /* Pointers */
+    printAddress();
+    printf("The global variable i stores its value at memory location %p.\n", getAddress());
+    printf("The global variable i stores the value %d.\n", getDataAtAddress());
+    printf("The global variable j now stores the value %.2f.\n", storeDataAddress());
+    printf("The size of the value in the global variable j is %d bytes.\n", getDoubleBytes());
+    printf("The size of the pointer to the global variable j is %d bytes.\n", getPointerToDoubleBytes());
+    printf("The size of the value in the global variable i is %d bytes.\n", getIntByte());
+    printf("The size of the pointer to the global variable i is %d bytes.\n", getPointerToIntBytes());
+    
 }
