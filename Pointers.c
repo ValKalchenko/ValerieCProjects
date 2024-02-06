@@ -149,3 +149,37 @@ int getPointerToIntBytes(void){
     // when using an address in a pointer
     return sizeof(ptr);
 }
+
+// this function prints the address of a pointer to a 
+// double that stores NULL
+void pointerToNull(void){
+    // declare a pointer to a double
+    // the star is needed when declaring a pointer
+    double *ptr;
+
+    // store NULL in pointer
+    // NULL is an address where no data exists
+    ptr = NULL;
+
+    // get the address of the global variable j
+    // and store it in the pointer 
+    // the ampersand is needed when getting the address 
+    // of a variable
+    ptr = &j;
+
+    // check if pointer is NOT NULL
+    // neither the ampersand nor the star is needed
+    // when using an address in a pointer
+    // NOT NULL - true
+    // NULL - false
+    if (ptr) {
+        // neither the ampersand nor the star is needed
+        // when using an address in a pointer
+        printf("The address of the pointer to a double that does not store NULL is %p.\n", ptr);
+    } else {
+        // neither the ampersand nor the star is needed
+        // when using an address in a pointer
+        printf("The address of the pointer to a double that does store NULL is %p.\n", ptr);
+
+    }
+}
